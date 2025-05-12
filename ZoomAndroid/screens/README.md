@@ -7,12 +7,24 @@ This directory contains all the main screen components of the application. Each 
 ### Authentication Screens
 - `LoginScreen.tsx` - Handles user authentication and login functionality
 - `SignupScreen.tsx` - Manages new user registration process
-
-### Core Application Screens
+- `AuthLoadingScreen.tsx` - Displays loading state during authentication process
 - `SplashScreen.tsx` - Initial loading screen shown when the app starts
-- `SuperUserScreen.tsx` - Administrative interface for super users
+
+### User Management Screens
+- `ProfileScreen.tsx` - User profile management and personal settings
+- `AdminScreen.tsx` - Administrative interface for system management
+- `SuperUserScreen.tsx` - Super user interface with advanced controls
+
+### Transaction Management Screens
 - `FinanceScreen.tsx` - Financial management and transaction interface
 - `PayeeScreen.tsx` - Payee management and related operations
+- `VoucherScreen.tsx` - Voucher generation and management system
+- `InitiatorScreen.tsx` - Transaction initiation and workflow management
+- `PaymentReleaserScreen.tsx` - Payment release and approval interface
+- `CheckerScreen.tsx` - Transaction verification and approval system
+
+### Content Management Screens
+- `PublisherScreen.tsx` - Content publishing and document management
 
 ## Screen Structure
 
