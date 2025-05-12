@@ -1,97 +1,103 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Zoom Android
 
-# Getting Started
+A React Native mobile application for managing financial transactions and user management.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Project Overview
 
-## Step 1: Start Metro
+This project is a React Native application built with TypeScript, providing a robust mobile solution for financial management and user administration. The application features multiple screens for different user roles and functionalities.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Directory Structure
 
-To start the Metro dev server, run the following command from the root of your React Native project:
-
-```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
+```
+├── android/           # Android native code and configurations
+├── ios/              # iOS native code and configurations
+├── assets/           # Static assets (images, fonts, etc.)
+├── components/       # Reusable React components
+├── config/           # Application configuration files
+├── screens/          # Main application screens
+├── utils/            # Utility functions and helpers
+├── __tests__/        # Test files
+└── .bundle/          # Bundle configuration
 ```
 
-## Step 2: Build and run your app
+## Prerequisites
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+- Node.js (v14 or higher)
+- React Native CLI
+- Android Studio (for Android development)
+- Xcode (for iOS development, macOS only)
+- JDK 11 or higher
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone [repository-url]
+cd ZoomAndroid
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. For iOS (macOS only):
+```bash
+cd ios
+pod install
+cd ..
+```
+
+## Running the Application
 
 ### Android
-
-```sh
-# Using npm
+```bash
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+### iOS (macOS only)
+```bash
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## Available Scripts
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+- `npm start` - Starts the Metro bundler
+- `npm run android` - Runs the app on Android
+- `npm run ios` - Runs the app on iOS
+- `npm test` - Runs the test suite
+- `npm run lint` - Runs the linter
 
-## Step 3: Modify your app
+## Project Structure Details
 
-Now that you have successfully run the app, let's make changes!
+### Screens
+- `LoginScreen`: User authentication
+- `SignupScreen`: New user registration
+- `SplashScreen`: Initial loading screen
+- `SuperUserScreen`: Administrative interface
+- `FinanceScreen`: Financial management interface
+- `PayeeScreen`: Payee management interface
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+### Components
+- `AppHeader`: Common header component
+- `CustomButton`: Reusable button component
+- `CustomInput`: Reusable input component
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+### Utils
+- `theme.ts`: Application theming and styling utilities
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## Contributing
 
-## Congratulations! :tada:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You've successfully run and modified your React Native App. :partying_face:
+## License
 
-### Now what?
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+## Contact
 
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+For any queries or support, please contact the project maintainers.
